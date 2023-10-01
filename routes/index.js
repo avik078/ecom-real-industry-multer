@@ -20,7 +20,7 @@ router.get('/', function(req, res, next) {
 /*   GET API  page. */ 
 router.use("/api",admin)
 router.use("/api",user)
-router.use(middleware_1) /////////token verify for further query ADMIN amd USER
+router.use(middleware_1) ///////// token verify for further query ADMIN amd USER
 router.use("/api",adminpic)
 router.use("/api",proregister)
 router.use("/api",proget)

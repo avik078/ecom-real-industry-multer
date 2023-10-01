@@ -66,7 +66,7 @@ const loginAdmin = async (req, res) => {
           .json({ status: true, msg: "User Not registered", data: data });
       } else {
         if (compareHash(password, data.password)) {
-          ////////////////////////// /////////////////////////Login condition
+          ////////////////////////// ///////////////Login condition
           const signOb = { _id: data._id };
           const token = jwt.sign(signOb, "SECRET_KEY");
           res.status(200).json({
